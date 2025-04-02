@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>NETE Lanchonete</title>
+</head>
+<body>
+
+  <!-- ÁREA DOS ÍCONES DAS REDES SOCIAIS -->
+  <div class="gradient-background">
+    <div class="container">
+      <div class="outer-container">
+        
+        <!-- ÁREA DOS ÍCONES DAS REDES SOCIAIS -->
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/elainecelestino/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://sammyfreitas.github.io/portfolioSite/" target="_blank"><i class="fas fa-globe"></i></a>
+          <a href="https://github.com/elaccel" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/elaine__cel/profilecard/?igsh=ajRwMmtpaG43b2Vl" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:elacelestinocontato@gmail.com?subject=Fale%20Conosco"><i class="far fa-envelope"></i></a>
+          <a href="https://wa.me/5521999121451" target="_blank" class="whatsapp-link"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <!-- Cardápio da Lanchonete -->
+    
+        <div class="menu-container">
+            <h1>Cardápio TOP 10</h1>
+            <div class="menu-item">
+                <div class="item-info">
+                    <label for="cachorroQuenteQtde">Cachorro Quente (R$7,00):</label>
+                    <input type="number" id="cachorroQuenteQtde" placeholder="Quantidade" />
+                </div>
+                <img src="./imagens/cquente.png" alt="Cachorro Quente">
+            </div>
+            <div class="menu-item">
+                <div class="item-info">
+                    <label for="bauruSimplesQtde">Bauru Simples (R$10,30):</label>
+                    <input type="number" id="bauruSimplesQtde" placeholder="Quantidade" />
+                </div>
+                <img src="./imagens/bsimples.png" alt="Bauru Simples">
+            </div>
+            <div class="menu-item">
+                <div class="item-info">
+                    <label for="bauruComOvoQtde">Bauru c/ Ovo (R$15,00):</label>
+                    <input type="number" id="bauruComOvoQtde" placeholder="Quantidade" />
+                </div>
+                <img src="./imagens/bcomovo.png" alt="Bauru com Ovo">
+            </div>
+            <div class="menu-item">
+                <div class="item-info">
+                    <label for="hamburguerQtde">Hamburguer (R$7,00):</label>
+                    <input type="number" id="hamburguerQtde" placeholder="Quantidade" />
+                </div>
+                <img src="./imagens/hamburguer.png" alt="Hamburguer">
+            </div>
+            <div class="menu-item">
+                <div class="item-info">
+                    <label for="cheeseburgerQtde">Cheeseburger (R$9,00):</label>
+                    <input type="number" id="cheeseburgerQtde" placeholder="Quantidade" />
+                </div>
+                <img src="./imagens/cheeseb.png" alt="Cheeseburger">
+            </div>
+            <div class="menu-item">
+                <div class="item-info">
+                    <label for="refrigeranteQtde">Refrigerante (R$7,00):</label>
+                    <input type="number" id="refrigeranteQtde" placeholder="Quantidade" />
+                </div>
+                <img src="./imagens/refri.png" alt="Refrigerante">
+            </div>
+            <div class="menu-item">
+                <div class="item-info">
+                    <label for="hamburguerVegano">Hamburguer Vegano (R$10,00):</label>
+                    <input type="number" id="hamburguerVeganoQtde" placeholder="Quantidade" />
+                </div>
+                <img src="./imagens/vegano.png" alt="hamburguer vegano">
+            </div>
+            <div class="menu-item">
+                <div class="item-info">
+                    <label for="brigadeiro">Brigadeiro (R$3,00):</label>
+                    <input type="number" id="brigadeiroQtde" placeholder="Quantidade" />
+                </div>
+                <img src="./imagens/brigadeiro.png" alt="Cachorro Quente">
+            </div>
+
+            <!-- Botão para Calcular o Total -->
+            <button onclick="calcularTotal()">Calcular Preço</button>
+        </div>
+
+        <!-- Div para Exibir os Itens Calculados e o Total -->
+        <div class="order-summary">
+            <h2>Resumo do Pedido</h2>
+            <div id="resumoPedido"></div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        Desenvolvido por <a href="https://github.com/sammyfreitas/portfolioSite" target="_blank">ElaCel</a>, no Curso de Programador FrontEnd do Senai (2025) Todos os direitos reservados
+    </footer>
+
+    
+</body>
+</html>
